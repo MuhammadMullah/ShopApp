@@ -1,5 +1,3 @@
-// this is  the server file
-
 const http = require('http');
 const app = require('./app');
 
