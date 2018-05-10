@@ -9,8 +9,15 @@ router.get('/',  (req, res, next) => {
 
 
 router.post('/',  (req, res, next) => {
+	const order = {
+		name: req.body.name,
+		price: req.body.price
+	};
+
+
 	res.status(201).json({
-		message: 'Order was created'
+		message: 'Order was created',
+		order: order
 	})
 });
 
