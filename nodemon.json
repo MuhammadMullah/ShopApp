@@ -1,0 +1,6 @@
+{
+	"env": {
+		"MONGO_MLAB_USER": "mullah",
+		"MONGO_MLAB_PW": "password"
+	}
+} 
