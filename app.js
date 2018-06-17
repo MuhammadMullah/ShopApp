@@ -9,6 +9,8 @@ const orderRoutes =require('./api/routes/orders');
 
 mongoose.connect('mongodb://mullah:password@ds119650.mlab.com:19650/node-shopapp');
 
+mongoose.Promise = global.Promise;
+
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
